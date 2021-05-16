@@ -1,6 +1,6 @@
-// const PORT = process.env.PORT || 8000;
-// const API_URL = process.env.URL || `https://0.0.0.0:${PORT}`;
-const API_URL = "https://ztm-nasa.herokuapp.com";
+const PORT = process.env.PORT || 8000;
+const API_URL = process.env.URL || `https://localhost:${PORT}`;
+// const API_URL = "https://ztm-nasa.herokuapp.com";
 
 // Load planets and return as JSON.
 async function httpGetPlanets() {
