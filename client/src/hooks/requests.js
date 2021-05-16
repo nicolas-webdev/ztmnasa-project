@@ -1,4 +1,4 @@
-const PORT = process.env.PORT || 8000;
+// const PORT = process.env.PORT || 8000;
 // const API_URL = process.env.URL || `https://0.0.0.0:${PORT}`;
 const API_URL = "https://ztm-nasa.herokuapp.com";
 
