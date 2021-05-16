@@ -10,7 +10,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://0.0.0.0:3000",
+    origin: "http://0.0.0.0:3000",
   })
 );
 app.use(morgan("combined"));
