@@ -6,17 +6,22 @@
   "scripts": {
     "watch": "nodemon src/server.js",
     "start": "node src/server.js",
-    "test": "jest",
+    "test": "jest --detectOpenHandles",
     "test-watch": "jest --watch",
     "cluster": "pm2 start src/server.js -i max"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "jest": {
+    "testEnvironment": "node"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "csv-parse": "^4.15.4",
+    "dotenv": "^9.0.2",
     "express": "^4.17.1",
+    "mongoose": "^5.12.9",
     "morgan": "^1.10.0",
     "pm2": "^4.5.6"
   },
