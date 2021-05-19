@@ -1,9 +1,9 @@
 let API_URL;
 if (window.location.hostname === "localhost") {
   const PORT = process.env.PORT || 8000;
-  API_URL = process.env.API_URL || `http://localhost:${PORT}`;
+  API_URL = process.env.API_URL || `http://localhost:${PORT}/v1`;
 } else {
-  API_URL = "https://ztm-nasa.herokuapp.com";
+  API_URL = "https://ztm-nasa.herokuapp.com/v1";
 }
 
 // Load planets and return as JSON.
